@@ -1,9 +1,6 @@
 <?php
-
-include  "./classes/Paresoleil.php";
-include "./classes/Vehicule.php";
-include "./classes/Voiture.php";
-include "./classes/Coupe.php";
+require_once "./functions/classAutoLoader.php";
+spl_autoload_register('classAutoLoader');
 include "./functions/debug.php";
 
 $gerard = new Voiture("Jaune");
